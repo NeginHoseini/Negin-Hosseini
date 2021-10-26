@@ -1,19 +1,47 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Italy</title>
+    <link rel="icon" href="favicon.ico">
+    <meta name="keywords" content="Italy, Venice, Rome">
+    <meta name="description" content="In this website, you will learn more about Italy and its cities, especially Venice and Rome.">
+    <meta name="author" content="Negin Hosseini">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
-<div>
+<header>
     <h1>Italy</h1>
     <img src="2560px-Flag_of_Italy.svg.png" alt="Flag of Italy" width="140" height="67"/>
-    <hr>
-</div>
+    <nav>
+        <ul>
+            <li><a href="#italy">Italy</a></li>
+            <li><a href="#populateCities">Most populous cities</a>
+            <li><a href="#FamousCities">Most Famous Cities</a>
+                <details>
+                    <ul>
+                        <li><a href="#rome">Rome</a></li>
+                        <li><a href="#venice">Venice</a></li>
+                    </ul>
+                    <summary>
+                        <small>Cities</small>
+                    </summary>
+                </details>
+
+            </li>
+            <li><a href="#references">References</a>
+            <li><a href="#video">Video</a></li>
+        </ul>
+    </nav>
+</header>
+
+<hr>
 
 <div>
+    <ins id="italy" style="color: #2a5d11; font-weight: bold; font-size: larger">Italy</ins>
     <p>
-        <strong>Italy</strong>, officially the <strong>Italian Republic</strong>, is a country consisting of a peninsula
+        <strong >Italy</strong>, officially the <strong>Italian Republic</strong>, is a country consisting of a peninsula
         delimited by the Alps and several islands surrounding it.<br>
         Italy is located in the center of the Mediterranean Sea, in Southern Europe, and is also considered part of Western
         Europe.<br>
@@ -35,7 +63,7 @@
 </div>
 <br>
 <div>
-    <table border="1">
+    <table border="1" id="populateCities">
         <caption>The most populous cities in Italy</caption>
         <thead>
         <tr>
@@ -71,27 +99,27 @@
 </div>
 <br><br>
 <div>
-    <h2>2 Most Famous Cities of Italy </h2>
+    <h2 id="FamousCities" style="color: #8a1b1b">2 Most Famous Cities of Italy </h2>
     <ul>
         <li><a href="#rome">Rome</a></li>
         <li><a href="#venice">Venice</a></li>
     </ul>
 </div>
 <br>
-</div>
-<p>
-    <strong><a name="rome">Rome</a></strong>
-</p>
-<p>
-    Rome is a huge city packed with interesting things to see and do. Rome is known for its Roman Colosseum and other ancient Roman sites,<br>
-    beautiful squares with lavish Renaissance fountains, and its many churches. People usually visit the nearby Vatican Museums, Sistine Chapel,<br>
-    and Saint Peter’s Square and Basilica while in Rome too.<br>
-</p>
-<img src="154.jpg" alt="The Colosseum in Rome"  width="400" height="250"/>
+<div>
+    <p>
+        <strong id="rome">Rome</strong>
+    </p>
+    <p>
+        Rome is a huge city packed with interesting things to see and do. Rome is known for its Roman Colosseum and other ancient Roman sites,<br>
+        beautiful squares with lavish Renaissance fountains, and its many churches. People usually visit the nearby Vatican Museums, Sistine Chapel,<br>
+        and Saint Peter’s Square and Basilica while in Rome too.<br>
+    </p>
+    <img src="154.jpg" alt="The Colosseum in Rome"  width="400" height="250"/>
 </div>
 <div>
     <p>
-        <strong><a name="venice">Venice</a></strong>
+        <strong id="venice">Venice</strong>
     </p>
     <p>
         Venice is one of Italy’s most unique and romantic cities with its winding canals and small walking streets. Saint Mark’s Square <br>
@@ -100,7 +128,7 @@
     <img src="110.jpg" alt="Venice's Grand Canal"  width="400" height="250"/>
 </div>
 <br><br>
-<form>
+<form method="get">
     <label for="city_id">Search for other Italian cities</label>
     <input name="city" id="city_id">
     <input type="submit" value="about this city">
@@ -109,7 +137,7 @@
 
 <div>
     <hr>
-    <h3>references</h3>
+    <h3 id="references">References</h3>
     <ul>
         <li>https://en.wikipedia.org/wiki/Italy</li>
         <li>https://worldpopulationreview.com/countries/cities/italy</li>
@@ -117,5 +145,20 @@
     </ul>
 </div>
 
+<section>
+    <hr>
+    <h3 id="video">Video</h3>
+    <video src="sample-video.mp4" controls width="150px" >
+    </video>
+</section>
+
+<footer>
+    <hr>
+    <small>
+        Have a nice day
+    </small>
+</footer>
+
 </body>
 </html>
+
