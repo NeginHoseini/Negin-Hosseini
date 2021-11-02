@@ -8,6 +8,7 @@
     <meta name="description" content="In this website, you will learn more about Italy and its cities, especially Venice and Rome.">
     <meta name="author" content="Negin Hosseini">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -16,7 +17,7 @@
     <img src="2560px-Flag_of_Italy.svg.png" alt="Flag of Italy" width="140" height="67"/>
     <nav>
         <ul>
-            <li><a href="#italy">Italy</a></li>
+            <li><a href="#Italy">Italy</a></li>
             <li><a href="#populateCities">Most populous cities</a>
             <li><a href="#FamousCities">Most Famous Cities</a>
                 <details>
@@ -36,10 +37,9 @@
     </nav>
 </header>
 
-<hr>
-
+<section id="Italy">
 <div>
-    <ins id="italy" style="color: #2a5d11; font-weight: bold; font-size: larger">Italy</ins>
+    <ins style="color: #2a5d11; font-weight: bold; font-size: larger">Italy</ins>
     <p>
         <strong >Italy</strong>, officially the <strong>Italian Republic</strong>, is a country consisting of a peninsula
         delimited by the Alps and several islands surrounding it.<br>
@@ -97,7 +97,9 @@
         </tbody>
     </table>
 </div>
+</section>
 <br><br>
+<section class="cities">
 <div>
     <h2 id="FamousCities" style="color: #8a1b1b">2 Most Famous Cities of Italy </h2>
     <ul>
@@ -106,9 +108,9 @@
     </ul>
 </div>
 <br>
-<div>
+<div id="rome">
     <p>
-        <strong id="rome">Rome</strong>
+        <strong>Rome</strong>
     </p>
     <p>
         Rome is a huge city packed with interesting things to see and do. Rome is known for its Roman Colosseum and other ancient Roman sites,<br>
@@ -117,9 +119,9 @@
     </p>
     <img src="154.jpg" alt="The Colosseum in Rome"  width="400" height="250"/>
 </div>
-<div>
+<div id="venice">
     <p>
-        <strong id="venice">Venice</strong>
+        <strong>Venice</strong>
     </p>
     <p>
         Venice is one of Italy’s most unique and romantic cities with its winding canals and small walking streets. Saint Mark’s Square <br>
@@ -132,12 +134,11 @@
     <label for="city_id">Search for other Italian cities</label>
     <input name="city" id="city_id">
     <input type="submit" value="about this city">
-
 </form>
+</section>
 
-<div>
-    <hr>
-    <h3 id="references">References</h3>
+<div id="references">
+    <h3>References</h3>
     <ul>
         <li>https://en.wikipedia.org/wiki/Italy</li>
         <li>https://worldpopulationreview.com/countries/cities/italy</li>
@@ -146,7 +147,6 @@
 </div>
 
 <section>
-    <hr>
     <h3 id="video">Video</h3>
     <video src="sample-video.mp4" controls width="150px" >
     </video>
