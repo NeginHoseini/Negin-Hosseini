@@ -10,10 +10,12 @@
     <meta name="author" content="Negin Hosseini">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
 <header>
+    <button onclick="changeMode()">Dark/Light Mode</button>
     <h1>Italy</h1>
     <img src="media/2560px-Flag_of_Italy.svg.png" alt="Flag of Italy" width="140" height="67"/>
     <nav>
@@ -41,7 +43,7 @@
 <section class="container">
     <section id="Italy">
         <div>
-            <ins style="color: #2a5d11; font-weight: bold; font-size: larger">Italy</ins>
+            <ins style="color: #336c16; font-weight: bold; font-size: larger">Italy</ins>
             <p>
                 <strong>Italy</strong>, officially the <strong>Italian Republic</strong>, is a country consisting of a
                 peninsula
@@ -113,9 +115,9 @@
         </div>
     </section>
     <br><br>
-    <section class="cities">
+    <section id="cities">
         <div>
-            <h2 id="FamousCities" style="color: #8a1b1b">2 Most Famous Cities of Italy </h2>
+            <h2 id="FamousCities" style="color: #981e1e">2 Most Famous Cities of Italy </h2>
             <ul>
                 <li><a href="#rome">Rome</a></li>
                 <li><a href="#venice">Venice</a></li>
@@ -126,7 +128,7 @@
             <p>
                 <strong>Rome</strong>
             </p>
-            <p>
+            <p id="romeTxt">
                 Rome is a huge city packed with interesting things to see and do. Rome is known for its Roman Colosseum
                 and other ancient Roman sites,<br>
                 beautiful squares with lavish Renaissance fountains, and its many churches. People usually visit the
@@ -139,7 +141,7 @@
             <p>
                 <strong>Venice</strong>
             </p>
-            <p>
+            <p id="veniceTxt">
                 Venice is one of Italy’s most unique and romantic cities with its winding canals and small walking
                 streets. Saint Mark’s Square <br>
                 is the heart of Venice with the Doge’s Palace and stunning cathedral, Basilica San Marco, a blend of
@@ -164,7 +166,7 @@
         </section>
 
         <div id="references">
-            <h3>References</h3>
+            <h4 style="font-size: large">References</h4>
             <ul>
                 <li>https://en.wikipedia.org/wiki/Italy</li>
                 <li>https://worldpopulationreview.com/countries/cities/italy</li>

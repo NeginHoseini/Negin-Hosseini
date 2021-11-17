@@ -17,7 +17,6 @@ header nav ul{
 }
 
 a:hover{
-    color: #132072;
     font-weight: bold;
 }
 
@@ -40,7 +39,7 @@ table{
     overflow: scroll;
 }
 
-.cities{
+#cities{
     background: #eadfd4;
     border: 2px solid darkgoldenrod;
     border-radius: 20px;
@@ -79,10 +78,25 @@ form{
 }
 
 #Italy,
-.cities,
+#cities,
 .last{
     flex: none;
     width: 30%;
     margin: 20px auto;;
+}
 
+.changeBodyBG{
+    background: #232020FF;
+}
+
+.setColorWhite{
+    color: white;
+}
+
+.set_aColor{
+    color: #a587c9;
+}
+
+.setColorBlack{
+    color: Black;
 }
