@@ -22,3 +22,28 @@ function changeMode() {
         strong[i].classList.toggle("setColorBlack");
     }
 }
+
+$(document).ready(function (){
+
+    $("#hideShow").click(function (){
+        $("header nav").slideToggle(2000);
+    });
+
+    $("#italyFlag").animate({
+            opacity: '1',
+            width: '140px'
+    });
+
+    $("#cities img").fadeIn();
+
+
+    $("#submitComment").click(function(){
+        var inputComment = $("#comment_id").val();
+        if(inputComment != ""){
+            var br =  document.createElement('br');
+            $(".inputComments").append(inputComment + " ").append(br);
+            $("#comment_id").val("");
+        }
+    });
+
+});

@@ -10,14 +10,19 @@
     <meta name="author" content="Negin Hosseini">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+
+    <script src="JS/jquery-3.6.0.min.js"></script>
+    <script src="JS/script.js" defer></script>
+
 </head>
 
 <body>
 <header>
     <button onclick="changeMode()">Dark/Light Mode</button>
+    <button id="hideShow">Hide/Show Menu</button>
+
     <h1>Italy</h1>
-    <img src="media/2560px-Flag_of_Italy.svg.png" alt="Flag of Italy" width="140" height="67"/>
+    <img id="italyFlag"  style="opacity: 0.3" src="media/2560px-Flag_of_Italy.svg.png" alt="Flag of Italy" width="50" />
     <nav>
         <ul>
             <li><a href="#Italy">Italy</a></li>
@@ -150,10 +155,10 @@
             <img src="media/110.jpg" alt="Venice's Grand Canal" width="400" height="250"/>
         </div>
         <br><br>
-        <form method="get">
+        <form method="get" autocomplete="off">
             <label for="city_id">Search for other Italian cities</label>
             <input name="city" id="city_id">
-            <input type="submit" value="about this city">
+            <input id="submit" type="submit" value="about this city">
         </form>
     </section>
 
@@ -173,6 +178,25 @@
                 <li>https://www.marthasitaly.com/articles/59/top-5-cities-italy</li>
             </ul>
         </div>
+
+        <section class="comments">
+            <form method="get" onsubmit="return false" autocomplete="off">
+                <label for="comment_id">
+                    <h2 style="background: #eadfd4">
+                    Tell us your comment
+                    </h2>
+                </label>
+                <textarea name="comment" id="comment_id" style="width: 60%; height: 150px"></textarea>
+                <br>
+                <input id="submitComment" type="submit" value="Submit" style="width: 30%">
+            </form>
+            <br>
+            <h3>Your Comments</h3>
+            <p class="inputComments">
+
+            </p>
+
+        </section>
 
     </section>
 

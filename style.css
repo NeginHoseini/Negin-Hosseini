@@ -47,7 +47,7 @@ table{
     position: relative;
 }
 
-form{
+#cities form {
     text-align: center;
     width: 30%;
     padding: 10px;
@@ -99,4 +99,26 @@ form{
 
 .setColorBlack{
     color: Black;
+}
+
+#cities img{
+    display: none;
+}
+
+.last form {
+    text-align: center;
+}
+
+.comments{
+    border: 2px solid darkgoldenrod;
+    padding : 5px;
+    overflow: scroll;
+}
+
+.inputComments{
+    border: 2px solid #c6d554;
+    margin: 0 auto;
+    width: 90%;
+    height: 200px;
+    overflow: scroll;
 }
