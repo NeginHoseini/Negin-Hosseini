@@ -2,213 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Italy</title>
-    <link rel="icon" href="media/favicon.ico">
-    <meta name="keywords" content="Italy, Venice, Rome">
-    <meta name="description"
-          content="In this website, you will learn more about Italy and its cities, especially Venice and Rome.">
-    <meta name="author" content="Negin Hosseini">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
 
-    <script src="JS/jquery-3.6.0.min.js"></script>
-    <script src="JS/script.js" defer></script>
+    <style>
+        form{
+            width: 30%;
+            height: 20vh;
+            margin: 10% auto;
+            border: aqua 2px solid;
+            border-radius: 10px;
+            text-align: center;
+        }
 
+        #input{
+            width: 50%;
+            height: 3vh;
+            margin: 10% auto 5% auto;
+            border-radius: 5px;
+        }
+
+        #submit{
+            width: 20%;
+            background: #bddede;
+            color: #104f4f;
+        }
+
+        #submit:hover{
+            cursor: pointer;
+            background: #9ad0d0;
+        }
+    </style>
 </head>
-
 <body>
-<header>
-    <button onclick="changeMode()">Dark/Light Mode</button>
-    <button id="hideShow">Hide/Show Menu</button>
 
-    <h1>Italy</h1>
-    <img id="italyFlag"  style="opacity: 0.3" src="media/2560px-Flag_of_Italy.svg.png" alt="Flag of Italy" width="50" />
-    <nav>
-        <ul>
-            <li><a href="#Italy">Italy</a></li>
-            <li><a href="#populateCities">Most populous cities</a>
-            <li><a href="#FamousCities">Most Famous Cities</a>
-                <details>
-                    <ul>
-                        <li><a href="#rome">Rome</a></li>
-                        <li><a href="#venice">Venice</a></li>
-                    </ul>
-                    <summary>
-                        <small>Cities</small>
-                    </summary>
-                </details>
-
-            </li>
-            <li><a href="#references">References</a>
-            <li><a href="#video">Video</a></li>
-        </ul>
-    </nav>
-</header>
-
-<section class="container">
-    <section id="Italy">
-        <div>
-            <ins style="color: #336c16; font-weight: bold; font-size: larger">Italy</ins>
-            <p>
-                <strong>Italy</strong>, officially the <strong>Italian Republic</strong>, is a country consisting of a
-                peninsula
-                delimited by the Alps and several islands surrounding it.<br>
-                Italy is located in the center of the Mediterranean Sea, in Southern Europe, and is also considered part
-                of Western
-                Europe.<br>
-                A unitary parliamentary republic with Rome as its capital and largest city,the country covers a total
-                area of
-                301,340 km<sup>2</sup> and <br>
-                shares land borders with France, Switzerland, Austria, Slovenia, and the enclaved microstates of Vatican
-                City and
-                San Marino.<br>
-                Italy has a territorial exclave in Switzerland (Campione) and a maritime exclave in Tunisian waters
-                (Lampedusa).
-                <br>
-                With around 60 million inhabitants, Italy is the third-most populous member state of the European Union,
-                after
-                Germany and France.<br>
-            </p>
-            <p>
-                Today, Italy has as one of the most advanced economies in the world the eighth-largest economy by
-                nominal <abbr>GDP</abbr> (third in the European Union), <br>
-                the sixth-largest national wealth and the third-largest central bank gold reserve. It ranks very highly
-                in life expectancy, quality of life, healthcare, <br>
-                and education. The country is considered a great power and it plays a prominent role in regional and
-                global economic, military, cultural, and diplomatic affairs.<br>
-                <a href="https://en.wikipedia.org/wiki/Italy" target="_blank">Read More</a>
-            </p>
-        </div>
-        <br>
-        <div>
-            <table border="1" id="populateCities">
-                <caption>The most populous cities in Italy</caption>
-                <thead>
-                <tr>
-                    <th>City</th>
-                    <th>
-                        <time datetime="2021"> 2021</time>
-                        population
-                    </th>
-                </tr>
-
-                </thead>
-                <tbody>
-
-                <tr>
-                    <td>Rome</td>
-                    <td>2,318,895</td>
-                </tr>
-
-                <tr>
-                    <td>Milan</td>
-                    <td>1,236,837</td>
-                </tr>
-
-                <tr>
-                    <td>Naples</td>
-                    <td>959,470</td>
-                </tr>
-
-                <tr>
-                    <td>Turin</td>
-                    <td>870,456</td>
-                </tr>
-
-                </tbody>
-            </table>
-        </div>
-    </section>
-    <br><br>
-    <section id="cities">
-        <div>
-            <h2 id="FamousCities" style="color: #981e1e">2 Most Famous Cities of Italy </h2>
-            <ul>
-                <li><a href="#rome">Rome</a></li>
-                <li><a href="#venice">Venice</a></li>
-            </ul>
-        </div>
-        <br>
-        <div id="rome">
-            <p>
-                <strong>Rome</strong>
-            </p>
-            <p id="romeTxt">
-                Rome is a huge city packed with interesting things to see and do. Rome is known for its Roman Colosseum
-                and other ancient Roman sites,<br>
-                beautiful squares with lavish Renaissance fountains, and its many churches. People usually visit the
-                nearby Vatican Museums, Sistine Chapel,<br>
-                and Saint Peter’s Square and Basilica while in Rome too.<br>
-            </p>
-            <img src="media/154.jpg" alt="The Colosseum in Rome" width="400" height="250"/>
-        </div>
-        <div id="venice">
-            <p>
-                <strong>Venice</strong>
-            </p>
-            <p id="veniceTxt">
-                Venice is one of Italy’s most unique and romantic cities with its winding canals and small walking
-                streets. Saint Mark’s Square <br>
-                is the heart of Venice with the Doge’s Palace and stunning cathedral, Basilica San Marco, a blend of
-                east and west.
-            </p>
-            <img src="media/110.jpg" alt="Venice's Grand Canal" width="400" height="250"/>
-        </div>
-        <br><br>
-        <form method="get" autocomplete="off">
-            <label for="city_id">Search for other Italian cities</label>
-            <input name="city" id="city_id">
-            <input id="submit" type="submit" value="about this city">
-        </form>
-    </section>
-
-    <section class="last">
-
-        <section class="videoCnt">
-            <h3 id="video">Video</h3>
-            <video src="media/sample-video.mp4" controls width="150px">
-            </video>
-        </section>
-
-        <div id="references">
-            <h4 style="font-size: large">References</h4>
-            <ul>
-                <li>https://en.wikipedia.org/wiki/Italy</li>
-                <li>https://worldpopulationreview.com/countries/cities/italy</li>
-                <li>https://www.marthasitaly.com/articles/59/top-5-cities-italy</li>
-            </ul>
-        </div>
-
-        <section class="comments">
-            <form method="get" onsubmit="return false" autocomplete="off">
-                <label for="comment_id">
-                    <h2 style="background: #eadfd4">
-                    Tell us your comment
-                    </h2>
-                </label>
-                <textarea name="comment" id="comment_id" style="width: 60%; height: 150px"></textarea>
-                <br>
-                <input id="submitComment" type="submit" value="Submit" style="width: 30%">
-            </form>
-            <br>
-            <h3>Your Comments</h3>
-            <p class="inputComments">
-
-            </p>
-
-        </section>
-
-    </section>
-
-</section>
-
-<footer>
-    <hr>
-    <small>
-        Have a nice day
-    </small>
-</footer>
+<form action="./index.php" method="get" autocomplete="off">
+    <input type="text" id="input" name="input" />
+    <br>
+    <input type="submit" id="submit" value="Calculate" />
+</form>
 
 </body>
 </html>
-
